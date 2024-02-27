@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 # Install necessary packages
 yum install -y wget sudo perl libaio numactl net-tools
