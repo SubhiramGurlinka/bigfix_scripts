@@ -4,10 +4,10 @@
 # This script is not limited to any specific version of Ubuntu; it's a generic script.
 # But please validate the OS version and the download link of MySQL for that particular OS version before executing the script.
 # Usage (single line):
-#   curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mysql_ubuntu_script.sh; bash install_mysql_ubuntu_script.sh "https://downloads.mysql.com/archives/get/p/23/file/mysql-server_8.2.0-1ubuntu22.04_amd64.deb-bundle.tar"
+#   wget "https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mysql_ubuntu_script.sh"; bash install_mysql_ubuntu_script.sh "https://downloads.mysql.com/archives/get/p/23/file/mysql-server_8.2.0-1ubuntu22.04_amd64.deb-bundle.tar"
 # OR
 # Usage:
-#   curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mysql_ubuntu_script.sh
+#   wget "https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mysql_ubuntu_script.sh"
 #   bash install_mysql_ubuntu_script.sh "https://downloads.mysql.com/archives/get/p/23/file/mysql-server_8.2.0-1ubuntu22.04_amd64.deb-bundle.tar"
 
 # Function to display usage and exit
