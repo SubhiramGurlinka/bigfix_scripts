@@ -50,16 +50,15 @@ wget "$DOWNLOAD_LINK"
 tar -xvf "$FILENAME"
 
 # Install MySQL DEB files
-dpkg -i mysql-common*.deb
-dpkg -i mysql-community-client-plugins*.deb
-dpkg -i mysql-community-client-core*.deb
-dpkg -i mysql-community-client*.deb
-dpkg -i mysql-community-server-core*.deb
-dpkg -i mysql-client*.deb
-dpkg -i mysql-community-server*.deb
-dpkg -i mysql-community-server*.deb
-dpkg -i mysql-community-test*.deb
-dpkg -i mysql-community-test-debug*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-common*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-community-client-plugins*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-community-client-core*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-community-client*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-community-server-core*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-client*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-community-server*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-community-test*.deb
+DEBIAN_FRONTEND=noninteractive dpkg -i mysql-community-test-debug*.deb
 
 # Clean up
 rm -f "$FILENAME"
