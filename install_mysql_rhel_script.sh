@@ -36,7 +36,7 @@ fi
 FILENAME=$(basename "$DOWNLOAD_LINK")
 
 # Install necessary packages
-yum install -y wget sudo perl libaio numactl net-tools openssl-devel openssl-libs libtirpc libcrypto.so.1.1
+yum install -y wget sudo perl libaio numactl net-tools openssl-devel openssl-libs libtirpc libcrypto.so.1.1 perl-JSON
 
 # Download MySQL RPM bundle
 wget "$DOWNLOAD_LINK"
@@ -51,7 +51,17 @@ rpm -ivh mysql-community-client-plugins-${MYSQL_VERSION}*.rpm
 rpm -ivh mysql-community-libs-${MYSQL_VERSION}*.rpm
 rpm -ivh mysql-community-client-${MYSQL_VERSION}*.rpm
 rpm -ivh mysql-community-server-${MYSQL_VERSION}*.rpm
-
+rpm -ivh mysql-community-debuginfo-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-client-debuginfo-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-client-plugins-debuginfo-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-debugsource-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-devel-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-libs-debuginfo-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-server-debug-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-server-debug-debuginfo-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-server-debuginfo-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-test-${MYSQL_VERSION}*.rpm
+rpm -ivh mysql-community-test-debuginfo-${MYSQL_VERSION}*.rpm
 # Clean up
 rm -f "$FILENAME"
 
