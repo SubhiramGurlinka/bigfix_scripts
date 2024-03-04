@@ -1,1 +1,1 @@
-# bigfix_scripts
+# software installation scripts
