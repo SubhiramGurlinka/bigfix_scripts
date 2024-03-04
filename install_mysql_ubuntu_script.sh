@@ -41,7 +41,7 @@ echo "mysql-community-server	mysql-community-server/auth-option select $DEFAULT_
 
 # Install necessary packages
 apt-get update
-apt-get install -y wget sudo perl libaio1 libmecab2 libnuma1 psmisc libmysqlclient-dev libjson-perl mecab-ipadic-utf8
+apt-get install -y wget sudo perl libaio1 libmecab2 libnuma1 psmisc libmysqlclient-dev libjson-perl mecab-ipadic-utf8 libsasl2-2
 
 # Download MySQL DEB bundle
 wget "$DOWNLOAD_LINK"
