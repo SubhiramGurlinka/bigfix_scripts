@@ -36,16 +36,18 @@ apt-get install -y wget sudo perl libaio1 libmecab2 libnuma1 psmisc libmysqlclie
 wget "$DOWNLOAD_LINK"
 
 # Extract MySQL DEB files
-dpkg -i mysql-common_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-client-plugins_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-client-core_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-client_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-server-core_${MYSQL_VERSION}*.deb
-dpkg -i mysql-client_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-server_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-server_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-test_${MYSQL_VERSION}*.deb
-dpkg -i mysql-community-test-debug_${MYSQL_VERSION}*.deb
+tar -xvf "$FILENAME"
+
+# Install MySQL DEB files
+dpkg -i mysql-common*.deb
+dpkg -i mysql-community-client-plugins*.deb
+dpkg -i mysql-community-client-core*.deb
+dpkg -i mysql-community-client*.deb
+dpkg -i mysql-community-server-core*.deb
+dpkg -i mysql-client*.deb
+dpkg -i mysql-community-server*.deb
+dpkg -i mysql-community-test*.deb
+dpkg -i mysql-community-test-debug*.deb
 
 # Clean up
 rm -f "$FILENAME"
