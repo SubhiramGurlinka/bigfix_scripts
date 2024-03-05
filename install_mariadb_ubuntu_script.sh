@@ -37,7 +37,7 @@ cd "${tar_file%.tar}"
 
 # Install MariaDB DEB packages
 echo "Installing MariaDB DEB packages..."
-for deb_package in mariadb-*.deb; do
+for deb_package in *.deb; do
     dpkg -i "$deb_package"
 done
 
@@ -45,7 +45,7 @@ done
 apt-get install -f -y
 
 echo "Installing MariaDB DEB packages..."
-for deb_package in mariadb-*.deb; do
+for deb_package in *.deb; do
     dpkg -i "$deb_package"
 done
 # Cleanup: remove downloaded files and extracted directory
