@@ -2,10 +2,10 @@
 #
 # usage:
 # single line command:
-# curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mariadb_ubuntu_script.sh; bash install_mariadb_ubuntu_script.sh "https://downloads.mariadb.com/MariaDB/mariadb-10.11.1/repo/ubuntu/mariadb-10.11.1-ubuntu.tar.gz"
+# curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mariadb_ubuntu_script.sh; bash install_mariadb_ubuntu_script.sh "https://downloads.mariadb.com/MariaDB/mariadb-10.11.1/repo/ubuntu/mariadb-10.11.1-ubuntu-jammy-amd64-debs.tar"
 # usage:
 # curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mariadb_ubuntu_script.sh
-# bash install_mariadb_ubuntu_script.sh "https://downloads.mariadb.com/MariaDB/mariadb-10.11.1/repo/ubuntu/mariadb-10.11.1-ubuntu.tar.gz"
+# bash install_mariadb_ubuntu_script.sh "https://downloads.mariadb.com/MariaDB/mariadb-10.11.1/repo/ubuntu/mariadb-10.11.1-ubuntu-jammy-amd64-debs.tar"
 # Replace the MariaDB download link in the examples with the appropriate link for the version you want to install. Ensure the link points to a valid MariaDB DEB package for the desired Ubuntu version.
 
 # Check if a download link is provided as an argument
