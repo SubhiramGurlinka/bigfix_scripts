@@ -38,7 +38,7 @@ cd "$rpm_dir"
 
 # Install MariaDB DEB packages
 echo "Installing MariaDB DEB packages..."
-dpkg -i *.deb
+apt install *.deb
 
 # Install dependencies if needed
 apt-get install -f -y
