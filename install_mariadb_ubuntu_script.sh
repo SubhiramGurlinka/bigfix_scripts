@@ -32,12 +32,9 @@ wget "$download_link"
 tar_file=$(basename "$download_link")
 tar -xvf "$tar_file"
 
-# Extract the inner tar.gz file
-inner_tar_file=$(tar -tzf "$tar_file" | head -n 1)
-tar -xvf "$tar_file" "$inner_tar_file"
-
 # Navigate to the extracted directory
-cd "$inner_tar_file"
+rpm_dir="${tar_file%.tar}"
+cd "$rpm_dir"
 
 # Install MariaDB DEB packages
 echo "Installing MariaDB DEB packages..."
