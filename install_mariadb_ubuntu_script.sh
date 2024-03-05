@@ -33,19 +33,24 @@ tar_file=$(basename "$download_link")
 tar -xvf "$tar_file"
 
 # Navigate to the extracted directory
-rpm_dir="${tar_file%.tar}"
-cd "$rpm_dir"
+cd "${tar_file%.tar}"
 
 # Install MariaDB DEB packages
 echo "Installing MariaDB DEB packages..."
-apt install *.deb
+for deb_package in mariadb-*.deb; do
+    dpkg -i "$deb_package"
+done
 
 # Install dependencies if needed
 apt-get install -f -y
 
-# Cleanup: remove downloaded files and extracted directories
+echo "Installing MariaDB DEB packages..."
+for deb_package in mariadb-*.deb; do
+    dpkg -i "$deb_package"
+done
+# Cleanup: remove downloaded files and extracted directory
 echo "Cleaning up..."
-rm -f "$tar_file"
-rm -rf "$inner_tar_file"
+cd ..
+rm -rf "${tar_file%.tar}"
 
 echo "MariaDB installation completed successfully."
