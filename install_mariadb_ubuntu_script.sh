@@ -19,22 +19,25 @@ download_link="$1"
 
 # Install wget if not already installed
 if ! command -v wget &> /dev/null; then
-    echo "Installing sudo and wget..."
+    echo "Installing wget..."
     apt-get update
     apt-get install wget -y
 fi
 
-# Download the MariaDB DEB package
-echo "Downloading MariaDB DEB package..."
+# Download the MariaDB TAR file
+echo "Downloading MariaDB TAR file..."
 wget "$download_link"
 
 # Extract the tar file
 tar_file=$(basename "$download_link")
 tar -xvf "$tar_file"
 
+# Extract the inner tar.gz file
+inner_tar_file=$(tar -tzf "$tar_file" | head -n 1)
+tar -xvf "$tar_file" "$inner_tar_file"
+
 # Navigate to the extracted directory
-deb_dir="${tar_file%.tar.gz}"
-cd "$deb_dir"
+cd "$inner_tar_file"
 
 # Install MariaDB DEB packages
 echo "Installing MariaDB DEB packages..."
@@ -43,9 +46,9 @@ dpkg -i *.deb
 # Install dependencies if needed
 apt-get install -f -y
 
-# Cleanup: remove downloaded files and extracted directory
+# Cleanup: remove downloaded files and extracted directories
 echo "Cleaning up..."
 rm -f "$tar_file"
-rm -rf "$deb_dir"
+rm -rf "$inner_tar_file"
 
 echo "MariaDB installation completed successfully."
