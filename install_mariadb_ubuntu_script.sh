@@ -20,9 +20,8 @@ download_link="$1"
 # Install wget if not already installed
 if ! command -v wget &> /dev/null; then
     echo "Installing sudo and wget..."
-    apt-get install sudo -y
-    sudo apt-get update
-    sudo apt-get install wget -y
+    apt-get update
+    apt-get install wget -y
 fi
 
 # Download the MariaDB DEB package
@@ -39,10 +38,10 @@ cd "$deb_dir"
 
 # Install MariaDB DEB packages
 echo "Installing MariaDB DEB packages..."
-sudo dpkg -i *.deb
+dpkg -i *.deb
 
 # Install dependencies if needed
-sudo apt-get install -f -y
+apt-get install -f -y
 
 # Cleanup: remove downloaded files and extracted directory
 echo "Cleaning up..."
