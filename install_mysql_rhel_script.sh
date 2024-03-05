@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Note: this script install mysql on RHEL family. so it works on RHEL, rocky and other rhel based OS
+# Note: this script installs mysql on RHEL. so it works on RHEL, rocky and other rhel based OS
 # This sript is not limited to any specific version of RHEL this is a generic script. but please validate the os version and the download link of myswl for that particualr os version before executing the script
 # usage (single line):
 #  curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mysql_rhel_script.sh; bash install_mysql_rhel_script.sh "https://downloads.mysql.com/archives/get/p/23/file/mysql-8.2.0-1.el8.x86_64.rpm-bundle.tar" 
