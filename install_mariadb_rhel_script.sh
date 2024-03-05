@@ -1,4 +1,13 @@
 #!/bin/bash
+#
+# usage:
+# single line command:
+# curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mariadb_rhel_script.sh; bash install_mariadb_rhel_script.sh "https://downloads.mariadb.com/MariaDB/mariadb-10.11.1/yum/rhel/mariadb-10.11.1-rhel-8-x86_64-rpms.tar"
+# usage:
+# curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mariadb_rhel_script.sh
+# bash install_mariadb_rhel_script.sh "https://downloads.mariadb.com/MariaDB/mariadb-10.11.1/yum/rhel/mariadb-10.11.1-rhel-8-x86_64-rpms.tar"
+# Replace the MariaDB download link in the examples with the appropriate link for the version you want to install. Ensure the link points to a valid MariaDB RPM package for the desired RHEL-based distribution.
+#
 
 # Check if a download link is provided as an argument
 if [ -z "$1" ]; then
