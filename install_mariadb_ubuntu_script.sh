@@ -19,7 +19,8 @@ download_link="$1"
 
 # Install wget if not already installed
 if ! command -v wget &> /dev/null; then
-    echo "Installing wget..."
+    echo "Installing sudo and wget..."
+    apt-get install sudo -y
     sudo apt-get update
     sudo apt-get install wget -y
 fi
