@@ -1,6 +1,13 @@
 #!/bin/bash
 
 # give the file name as an input, since we are not able to access the download URL for this file
+# Usage (single line):
+#   wget "https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_IBM_MQ_rhel_script.sh"; bash install_IBM_MQ_rhel_script.sh "9.2.0.0-IBM-MQTRIAL-LinuxX64.tar.gz"
+# OR
+# Usage:
+#   wget "https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_IBM_MQ_rhel_script.sh"
+#   bash install_IBM_MQ_rhel_script.sh "9.2.0.0-IBM-MQTRIAL-LinuxX64.tar.gz"
+
 
 # Function to display usage information
 display_usage() {
