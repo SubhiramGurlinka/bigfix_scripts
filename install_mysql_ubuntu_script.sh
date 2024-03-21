@@ -33,11 +33,11 @@ ROOT_PASSWORD=""
 DEFAULT_AUTH_PLUGIN="1"
 
 # Create debconf selections file
-echo "mysql-community-server	mysql-community-server/re-root-pass password $ROOT_PASSWORD" | debconf-set-selections
-echo "mysql-community-server	mysql-community-server/root-pass password $ROOT_PASSWORD" | debconf-set-selections
-echo "mysql-community-server	mysql-community-server/remove-test-db select true" | debconf-set-selections
-echo "mysql-community-server	mysql-community-server/select-boolean	boolean true" | debconf-set-selections
-echo "mysql-community-server	mysql-community-server/auth-option select $DEFAULT_AUTH_PLUGIN" | debconf-set-selections
+# echo "mysql-community-server	mysql-community-server/re-root-pass password $ROOT_PASSWORD" | debconf-set-selections
+# echo "mysql-community-server	mysql-community-server/root-pass password $ROOT_PASSWORD" | debconf-set-selections
+# echo "mysql-community-server	mysql-community-server/remove-test-db select true" | debconf-set-selections
+# echo "mysql-community-server	mysql-community-server/select-boolean	boolean true" | debconf-set-selections
+# echo "mysql-community-server	mysql-community-server/auth-option select $DEFAULT_AUTH_PLUGIN" | debconf-set-selections
 
 # Install necessary packages
 apt-get update
