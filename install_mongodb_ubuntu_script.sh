@@ -66,8 +66,8 @@ sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org
 sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-org_${version}_amd64.deb"
 
 # Install MongoDB packages
-sudo dpkg -i mongodb-mongosh_${version}_amd64.deb
-sudo dpkg -i mongodb-database-tools_${version}_amd64.deb
+sudo dpkg -i mongodb-mongosh_2.2.1_amd64.deb
+sudo dpkg -i mongodb-database-tools_100.9.4_amd64.deb
 sudo dpkg -i mongodb-org-database-tools-extra_${version}_amd64.deb
 sudo dpkg -i mongodb-org-shell_${version}_amd64.deb
 sudo dpkg -i mongodb-org-mongos_${version}_amd64.deb
