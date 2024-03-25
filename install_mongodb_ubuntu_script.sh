@@ -45,6 +45,8 @@ case $os_choice in
         ;;
 esac
 
+apt-get install -y sudo
+
 # Ask for MongoDB version
 read -p "Enter MongoDB version (e.g., 7.0.5): " version
 echo
