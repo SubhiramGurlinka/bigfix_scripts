@@ -41,7 +41,7 @@ DEFAULT_AUTH_PLUGIN="1"
 
 # Install necessary packages
 apt-get update
-apt-get install -y wget sudo perl libaio1 libmecab2 libnuma1 psmisc libmysqlclient-dev libjson-perl mecab-ipadic-utf8 libsasl2-2
+apt-get install -y wget sudo perl libaio1 libmecab2 libnuma1 psmisc libmysqlclient-dev libjson-perl mecab-ipadic-utf8 libsasl2-2 libgssapi-krb5-2 libkrb5-3
 
 # Download MySQL DEB bundle
 wget "$DOWNLOAD_LINK"
