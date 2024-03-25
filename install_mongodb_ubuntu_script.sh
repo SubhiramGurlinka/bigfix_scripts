@@ -9,7 +9,7 @@
 
 # Usage:
 # 1. Run the script with the appropriate parameters:
-#    curl -O https://raw.githubusercontent.com/your_username/your_repo/main/install_mongodb_ubuntu_script.sh
+#    wget "https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mongodb_ubuntu_script.sh"
 #    bash install_mongodb_ubuntu_script.sh
 # 2. Follow the prompts to select the Ubuntu version and enter the MongoDB version.
 # 3. After installation, the script will display the installed MongoDB version and packages.
@@ -17,7 +17,7 @@
 
 
 # Display OS details
-lsb_release -a
+cat /etc/os-release
 echo
 echo
 
@@ -44,6 +44,8 @@ case $os_choice in
         exit 1
         ;;
 esac
+
+apt-get install -y sudo
 
 # Ask for MongoDB version
 read -p "Enter MongoDB version (e.g., 7.0.5): " version
