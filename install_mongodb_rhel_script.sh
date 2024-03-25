@@ -14,7 +14,7 @@
 # If the restart fails within the timeout, the script starts the BES client instead.
 # Usage:
 # 1. Run the script directly or download it using curl:
-#    curl -O https://raw.githubusercontent.com/your_username/your_repo/main/install_mongodb_rhel_script.sh
+#    curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mongodb_rhel_script.sh
 # 2. Execute the script with appropriate permissions:
 #    bash install_mongodb_rhel_script.sh
 # 3. Follow the prompts to enter the MongoDB version and OS version.
