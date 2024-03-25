@@ -55,8 +55,8 @@ echo
 major_version=$(echo "$version" | cut -d. -f1-2)
 
 # Download MongoDB packages
-sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-mongosh_${version}_amd64.deb"
-sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-database-tools_${version}_amd64.deb"
+sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-mongosh_2.2.1_amd64.deb"
+sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-database-tools_100.9.4_amd64.deb"
 sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-org-database-tools-extra_${version}_amd64.deb"
 sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-org-shell_${version}_amd64.deb"
 sudo wget "https://repo.mongodb.org/apt/ubuntu/dists/$ubuntu_version/mongodb-org/$major_version/multiverse/binary-amd64/mongodb-org-mongos_${version}_amd64.deb"
