@@ -45,7 +45,7 @@ case $os_choice in
         ;;
 esac
 
-apt-get install -y sudo
+apt-get install -y sudo libcurl4 tzdata
 
 # Ask for MongoDB version
 read -p "Enter MongoDB version (e.g., 7.0.5): " version
