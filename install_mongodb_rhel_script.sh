@@ -52,14 +52,14 @@ $package_manager install -y sudo
 sudo $package_manager install -y wget
 
 # Download MongoDB packages
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-tools-$version-1.el$os_version.x86_64.rpm"
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-server-$version-1.el$os_version.x86_64.rpm"
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-mongos-$version-1.el$os_version.x86_64.rpm"
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-database-tools-extra-$version-1.el$os_version.x86_64.rpm"
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-database-$version-1.el$os_version.x86_64.rpm"
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-$version-1.el$os_version.x86_64.rpm"
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-mongosh-2.2.1.x86_64.rpm"
-sudo wget "https://repo.mongodb.org/$package_manager/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-database-tools-100.9.4.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-tools-$version-1.el$os_version.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-server-$version-1.el$os_version.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-mongos-$version-1.el$os_version.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-database-tools-extra-$version-1.el$os_version.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-database-$version-1.el$os_version.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-$version-1.el$os_version.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-mongosh-2.2.1.x86_64.rpm"
+sudo wget "https://repo.mongodb.org/yum/redhat/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-database-tools-100.9.4.x86_64.rpm"
 
 # Install MongoDB packages
 sudo $package_manager install -y mongodb*.rpm
