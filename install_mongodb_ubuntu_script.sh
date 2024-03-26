@@ -72,12 +72,12 @@ sudo dpkg -i mongodb-org-database-tools-extra_${version}_amd64.deb
 sudo dpkg -i mongodb-org-shell_${version}_amd64.deb
 sudo dpkg -i mongodb-org-mongos_${version}_amd64.deb
 sudo dpkg -i mongodb-org-tools_${version}_amd64.deb
-sudo dpkg -i mongodb-org-database_${version}_amd64.deb
 sudo dpkg -i mongodb-org-server_${version}_amd64.deb
+sudo dpkg -i mongodb-org-database_${version}_amd64.deb
 sudo dpkg -i mongodb-org_${version}_amd64.deb
 
 # Clean up
-sudo rm -f mongodb-org-*.deb
+sudo rm -f mongodb*.deb
 
 # Show installed MongoDB version and packages
 echo "Installed MongoDB version: $version"
@@ -87,11 +87,11 @@ dpkg -l | grep mongo
 read -p "Do you want to restart the BES client? (y/n): " restart_choice
 if [[ $restart_choice == "y" || $restart_choice == "Y" ]]; then
     # Restart BES client with a timeout of 15 seconds
-    systemctl restart besclient &
+    /etc/init.d/besclient restart &
     sleep 15
     # Check if BES client restarted, if not, start it
     if ! ps -ef | grep -q "[b]esclient"; then
-        systemctl start besclient
+        /etc/init.d/besclient start
     fi
 else
     echo "BES client not restarted."
