@@ -39,6 +39,8 @@ package_manager="zypper"
 $package_manager install -y sudo
 sudo $package_manager install -y wget
 
+sudo rpm --import https://www.mongodb.org/static/pgp/server-$major_version.asc
+
 # Download MongoDB packages
 sudo wget "https://repo.mongodb.org/zypper/suse/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-tools-$version-1.suse$os_version.x86_64.rpm"
 sudo wget "https://repo.mongodb.org/zypper/suse/$os_version/mongodb-org/$major_version/x86_64/RPMS/mongodb-org-server-$version-1.suse$os_version.x86_64.rpm"
