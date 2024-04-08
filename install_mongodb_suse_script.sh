@@ -9,7 +9,13 @@
 # After that, the script downloads the MongoDB packages from the official MongoDB repository based on the provided version and OS version.
 # The downloaded packages are then installed using the detected package manager.
 # Once the installation is complete, the script shows the installed MongoDB version and lists all MongoDB-related packages using rpm -qa | grep mongo.
-
+# Usage:
+# 1. Run the script directly or download it using curl:
+#    curl -O https://raw.githubusercontent.com/SubhiramGurlinka/bigfix_scripts/main/install_mongodb_suse_script.sh
+# 2. Execute the script with appropriate permissions:
+#    bash install_mongodb_suse_script.sh
+# 3. Follow the prompts to enter the MongoDB version and OS version.
+# 4. After installation, review the installed MongoDB version and packages.
 
 # Display OS details
 cat /etc/os-release
