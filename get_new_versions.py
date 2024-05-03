@@ -174,7 +174,7 @@ def csv_to_list(csv_file_path):
     except Exception as e:
         print("An error occurred:", str(e))
 
-csv_file_path = "C:/Users/sgbsubhiram.gurlinka/Documents/patch/middleware/documents/bigfix_scripts/software_data.csv"  # Change this to the path of your Excel file
+csv_file_path = "software_data.csv"  # Change this to the path of your Excel file
 new_versions = []
 
 rows_as_lists = csv_to_list(csv_file_path)
