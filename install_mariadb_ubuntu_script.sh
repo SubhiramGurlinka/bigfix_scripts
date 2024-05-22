@@ -33,7 +33,9 @@ wget "$1" -O mariadb-debs.tar
 tar -xvf mariadb-debs.tar
 cd mariadb-*-ubuntu-*-debs
 dpkg -i *deb
+apt-get install -f -y
 dpkg -i *deb
+apt --fix-broken install -y
 
 # Clean up
 cd ..

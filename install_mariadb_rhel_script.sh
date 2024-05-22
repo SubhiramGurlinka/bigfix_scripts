@@ -36,6 +36,8 @@ tar -xvf "$tar_file"
 rpm_dir="${tar_file%.tar}"
 cd "$rpm_dir"
 
+#install some required dependencies
+yum install -y boost-atomic boost-chrono boost-date-time boost-filesystem boost-program-options boost-regex boost-system boost-thread galera libicu libtool-ltdl libzstd lsof lzo make net-tools openssl perl-Compress-Raw-Bzip2 perl-Compress-Raw-Zlib perl-DBI perl-IO-Compress perl-Net-Daemon perl-PlRPC rsync snappy socat tcp_wrappers-libs unixODBC epel-release jemalloc Judy pv
 # Install MariaDB RPM packages, skipping broken dependencies
 echo "Installing MariaDB RPM packages..."
 yum install *.rpm --skip-broken -y
