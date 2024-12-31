@@ -203,9 +203,9 @@ if rows_as_lists:
                 matches = url_text_searcher_array(row[1],row[2])
                 maximum_version = get_maximum_version(matches)
                 # hardcoding the usecase for mariadb since it is unique and an edge case
-                if "MariaDB" in row[0]:
-                    matches = url_text_searcher_array(row[1]+maximum_version,'release_id\": \"(?P<mmi_version>\d+\.\d+\.\d+)')
-                    maximum_version = get_maximum_version(matches)
+                # if "MariaDB" in row[0]:
+                #     matches = url_text_searcher_array(row[1]+maximum_version,'release_id\": \"(?P<mmi_version>\d+\.\d+\.\d+)')
+                #     maximum_version = get_maximum_version(matches)
                 if str(maximum_version)!=current_version:
                     result = f"{row[0]} - current version: {current_version} - version found: {maximum_version} - (new update available)"
                     row[5] = maximum_version

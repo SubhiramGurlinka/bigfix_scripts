@@ -1,21 +1,21 @@
-Software_name,URL,re_pattern,url_textsearcher_array,Current_version,New_version,Status,Last_checked
-Apache Tomcat 8.5,https://tomcat.apache.org/tomcat-8.5-doc/index.html,"Version (?P<version>\d+\.\d+\.\d+)\,",No,8.5.100,,,
-Apache Tomcat 9.0,https://tomcat.apache.org/tomcat-9.0-doc/index.html,"Version (?P<version>\d+\.\d+\.\d+)\,",No,9.0.90,,,
-Apache Tomcat 10.1,https://tomcat.apache.org/tomcat-10.1-doc/index.html,"Version (?P<version>\d+\.\d+\.\d+)\,",No,10.1.25,,,
-MariaDB-LTS,https://downloads.mariadb.org/rest-api/mariadb/,"MariaDB Server (?P<mm_version>\d+\.\d+)"", ""release_status"": ""Stable"", ""release_support_type"": ""Long Term Support""",Yes,11.4.2,,,
-MariaDB-Latest,https://downloads.mariadb.org/rest-api/mariadb/,"MariaDB Server (?P<mm_version>\d+\.\d+)"", ""release_status"": ""Stable""",Yes,11.4.2,,,
-MongoDB,https://www.mongodb.com/try/download/community,(?P<version>\d+(\.\d+)+) \(current\),No,7.0.11,,,
-MySQL-LTS,https://dev.mysql.com/downloads/mysql/8.0.html,<h1>MySQL Community Server (?P<version>\d+\.\d+\.\d+),No,8.0.37,,,
-MySQL-Latest,https://dev.mysql.com/downloads/mysql/,<h1>MySQL Community Server (?P<version>\d+\.\d+\.\d+),No,8.4.0,,,
-JDK-17,https://www.oracle.com/in/java/technologies/downloads/,JDK Development Kit (?P<version>17\.\d+\.\d+),Yes,17.0.11,,,
-JDK-19,https://www.oracle.com/java/technologies/javase/jdk19-archive-downloads.html,jdk-(?P<version>\d+\.\d+\.\d+)_linux-x64,Yes,19.0.2,,,
-JDK-21,https://www.oracle.com/in/java/technologies/downloads/,JDK Development Kit (?P<version>21\.\d+\.\d+),Yes,21.0.3,,,
-JDK-11,https://www.oracle.com/in/java/technologies/downloads/,Java SE Development Kit (?P<version>11\.\d+\.\d+),Yes,11.0.23,,,
-JDK-8,https://www.oracle.com/in/java/technologies/downloads/,Java SE Development Kit 8u(?P<version>.\d+),Yes,411,,,
-Postgresql,https://www.postgresql.org/docs/release/,/docs/release/(?P<version>\d+\.\d+)/,Yes,16.3,,,
-IBM-MQ-9.1.0,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+MQ&release=9.1.0.0&platform=Linux+64-bit,x86_64&function=all",9.1.0-IBM-MQ-LinuxX64-FP(?P<version>\d{4}),Yes,21,,,
-IBM-MQ-9.2.0,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+MQ&release=9.2.0.0&platform=Linux+64-bit,x86_64&function=all",9.2.0-IBM-MQ-LinuxX64-FP(?P<version>\d{4}),Yes,25,,,
-IBM-MQ-9.3.0,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+MQ&release=9.3.0.0&platform=Linux+64-bit,x86_64&function=all",9.3.0-IBM-MQ-LinuxX64-FP(?P<version>\d{4}),Yes,17,,,
-IBM-WebSphere-9.0.5,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Application+Server&release=9.0.5.0&platform=Linux+64-bit,x86_64&function=all",9.0.5-WS-WAS-FP(?P<version>\d{3}),Yes,20,,,
-IBM-WebSphere-8.5.5,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Application+Server&release=8.5.5.0&platform=Linux+64-bit,x86_64&function=all",8.5.5-WS-WAS-FP(?P<version>\d{3}),Yes,25,,,
-IBM-DB2-11.5,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EInformation%20Management&product=ibm/Information+Management/DB2&release=11.5.*&platform=Linux+64-bit,x86_64&function=all",DB2-linuxx64-universal_fixpack-11.5.(?P<version>\d+.\d+)-FP\d+,Yes,9,,,
+Software_name,URL,re_pattern,url_textsearcher_array,Current_version,New_version,Status,Last_checked,Local_recipe
+Apache Tomcat 8.5,https://tomcat.apache.org/tomcat-8.5-doc/index.html,"Version (?P<version>\d+\.\d+\.\d+)\,",No,8.5.100,,,,
+Apache Tomcat 9.0,https://tomcat.apache.org/tomcat-9.0-doc/index.html,"Version (?P<version>\d+\.\d+\.\d+)\,",No,9.0.97,,,,
+Apache Tomcat 10.1,https://tomcat.apache.org/tomcat-10.1-doc/index.html,"Version (?P<version>\d+\.\d+\.\d+)\,",No,10.1.33,,,,
+MariaDB-LTS,https://dlm.mariadb.com/browse/mariadb_server/10.11/,Community Server (?P<mm_version>10.11\.\d+),Yes,10.11.10,,,,
+MariaDB-Latest,https://dlm.mariadb.com/browse/mariadb_server/11.4/,Community Server (?P<mm_version>11.4\.\d+),Yes,11.4.4,,,,
+MongoDB-7,https://www.mongodb.com/docs/upcoming/release-notes/7.0/,"(?P<version>\d+.\d+.\d+) . \S+.\d+, \d+",Yes,7.0.15,,,,
+MongoDB-8,https://www.mongodb.com/try/download/community,(?P<version>\d+(\.\d+)+) \(current\),No,8.0.3,,,,
+MySQL-LTS,https://dev.mysql.com/downloads/mysql/8.0.html,<h1>MySQL Community Server (?P<version>\d+\.\d+\.\d+),No,8.0.40,,,,
+MySQL-Latest,https://dev.mysql.com/downloads/mysql/,<h1>MySQL Community Server (?P<version>\d+\.\d+\.\d+),No,9.1.0,,,,
+JDK-17,https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html,Java SE Development Kit (?P<version>17.\d+.\d+),Yes,17.0.12,,,,
+JDK-21,https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html,Java SE Development Kit (?P<version>21.\d+.\d+),Yes,21.0.4,,,,
+JDK-11,https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html,Java SE Development Kit (?P<version>11.\d+.\d+),Yes,11.0.24,,,,Yes
+JDK-8,https://www.oracle.com/in/java/technologies/javase/javase8u211-later-archive-downloads.html,Java SE Development Kit 8u(?P<version>\d+),Yes,421,,,,Yes
+Postgresql,https://download.postgresql.org/pub/source/,v(?P<version>16.\d+),Yes,16.6,,,,
+IBM-MQ-9.1.0,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+MQ&release=9.1.0.0&platform=Linux+64-bit,x86_64&function=all",9.1.0-IBM-MQ-LinuxX64-FP(?P<version>\d{4}),Yes,24,,,,Yes
+IBM-MQ-9.2.0,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+MQ&release=9.2.0.0&platform=Linux+64-bit,x86_64&function=all",9.2.0-IBM-MQ-LinuxX64-FP(?P<version>\d{4}),Yes,28,,,,Yes
+IBM-MQ-9.3.0,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+MQ&release=9.3.0.0&platform=Linux+64-bit,x86_64&function=all",9.3.0-IBM-MQ-LinuxX64-FP(?P<version>\d{4}),Yes,25,,,,Yes
+IBM-WebSphere-9.0.5,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Application+Server&release=9.0.5.0&platform=Linux+64-bit,x86_64&function=all",9.0.5-WS-WAS-FP(?P<version>\d{3}),Yes,21,,,,Yes
+IBM-WebSphere-8.5.5,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EWebSphere&product=ibm/WebSphere/WebSphere+Application+Server&release=8.5.5.0&platform=Linux+64-bit,x86_64&function=all",8.5.5-WS-WAS-FP(?P<version>\d{3}),Yes,26,,,,Yes
+IBM-DB2-11.5,"https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7EInformation%20Management&product=ibm/Information+Management/DB2&release=11.5.*&platform=Linux+64-bit,x86_64&function=all",DB2-linuxx64-universal_fixpack-11.5.(?P<version>\d+.\d+)-FP\d+,Yes,9,,,,Yes
