@@ -8,7 +8,7 @@ MongoDB-7,https://www.mongodb.com/docs/upcoming/release-notes/7.0/,"(?P<version>
 MongoDB-8,https://www.mongodb.com/try/download/community,(?P<version>\d+(\.\d+)+) \(current\),No,8.0.3,,,,
 MySQL-LTS,https://dev.mysql.com/downloads/mysql/8.0.html,<h1>MySQL Community Server (?P<version>\d+\.\d+\.\d+),No,8.0.40,,,,
 MySQL-Latest,https://dev.mysql.com/downloads/mysql/,<h1>MySQL Community Server (?P<version>\d+\.\d+\.\d+),No,9.1.0,,,,
-JDK-17,https://www.oracle.com/java/technologies/javase/jdk17-archive-downloads.html,Java SE Development Kit (?P<version>17.\d+.\d+),Yes,17.0.12,,,,
+JDK-17,https://www.oracle.com/java/technologies/javase/jdk17-0-13-later-archive-downloads.html,Java SE Development Kit (?P<version>17.\d+.\d+),Yes,17.0.12,,,,
 JDK-21,https://www.oracle.com/java/technologies/javase/jdk21-archive-downloads.html,Java SE Development Kit (?P<version>21.\d+.\d+),Yes,21.0.4,,,,
 JDK-11,https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html,Java SE Development Kit (?P<version>11.\d+.\d+),Yes,11.0.24,,,,Yes
 JDK-8,https://www.oracle.com/in/java/technologies/javase/javase8u211-later-archive-downloads.html,Java SE Development Kit 8u(?P<version>\d+),Yes,421,,,,Yes
